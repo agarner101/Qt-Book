@@ -32,6 +32,9 @@ HEADERS += source/cm-lib_global.h / \
     source/controllers/master-controller.h
     source/models/client.h
 
+
+!build_pass:message(cm-lib project dir: $${PWD})
+
 unix {
     target.path = /usr/lib
     INSTALLS += target
