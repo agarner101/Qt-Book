@@ -5,9 +5,13 @@ TEMPLATE = app
 
 CONFIG += c++14
 
-INCLUDEPATH += source
+INCLUDEPATH += source \
+ ../cm-lib/source
 
 SOURCES += source/main.cpp
+
+# build-QtBook-Desktop_Qt_5_11_1_clang_64bit-Debug
+LIBS += -L$$PWD/../../build-QtBook-Desktop_Qt_5_11_1_clang_64bit-Debug/cm-lib/debug -lcm-lib
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
