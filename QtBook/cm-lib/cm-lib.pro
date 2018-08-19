@@ -25,9 +25,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 INCLUDEPATH += source
-SOURCES += source/models/client.cpp
+SOURCES += source/models/client.cpp \
+    source/controllers/master-controller.cpp
 
-HEADERS += source/cm-lib_global.h /
+HEADERS += source/cm-lib_global.h / \
+    source/controllers/master-controller.h
     source/models/client.h
 
 unix {
